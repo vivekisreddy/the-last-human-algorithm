@@ -239,3 +239,46 @@ body {
 .ref-content li {
     margin: 8px 0;
 }
+
+.theme-library {
+    margin: 40px 0;
+}
+
+.theme-library h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.theme-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.theme-card {
+    background: #fff;
+    border-radius: 14px;
+    padding: 18px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform .25s ease, box-shadow .25s ease;
+    border: 2px solid transparent;
+}
+
+.theme-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.theme-color {
+    height: 12px;
+    width: 45px;
+    display: inline-block;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.theme-card h3 {
+    margin: 5px 0;
+    font-size: 1.1rem;
+}
