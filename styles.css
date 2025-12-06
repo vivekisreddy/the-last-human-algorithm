@@ -282,3 +282,174 @@ body {
     margin: 5px 0;
     font-size: 1.1rem;
 }
+
+/* ----------------------------------------- */
+/*  Authorial Subjectivity Section (ARCHIVAL) */
+/* ----------------------------------------- */
+
+.authorial-section {
+    margin-top: 3rem;
+    padding: 2rem 2.2rem;
+    background: var(--about-bg); /* soft parchment white */
+    border: 1px solid var(--card-border); /* light archival grey-brown */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.authorial-section h2 {
+    font-size: 1.8rem;
+    color: var(--accent); /* warm sepia brown */
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.subjectivity-points {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.subjectivity-points .point {
+    padding: 1.2rem 1.4rem;
+    background: var(--highlight-bg); /* light archival beige highlight */
+    border-left: 4px solid var(--accent);
+    border-radius: 6px;
+}
+
+.subjectivity-points h3 {
+    margin-top: 0;
+    margin-bottom: 0.4rem;
+    font-size: 1.2rem;
+    color: var(--accent);
+    font-weight: bold;
+}
+
+.subjectivity-points p {
+    margin: 0;
+    color: var(--text-color);
+    font-size: 0.95rem;
+    line-height: 1.55;
+}
+
+/* THEME LIBRARY — interactive card styles (add to styles.css) */
+.theme-library { max-width: 1100px; margin: 2.5rem auto; padding: 0 1rem; }
+.theme-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px,1fr)); gap: 18px; }
+
+/* base card */
+.theme-card {
+    --rx: 0deg; --ry: 0deg;
+    background: var(--card-bg, rgba(255,255,250,0.95));
+    border: 1px solid var(--card-border, #cbbfaa);
+    padding: 14px;
+    border-radius: 10px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    transform: perspective(900px) rotateX(var(--rx)) rotateY(var(--ry));
+    transition: transform 260ms ease, box-shadow 260ms ease;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+/* hover tilt */
+.theme-card:hover { box-shadow: 0 14px 30px rgba(0,0,0,0.12); }
+
+/* top row */
+.theme-top { display:flex; align-items:center; gap:12px; }
+.theme-dot { width:14px; height:14px; border-radius:50%; flex:0 0 14px; box-shadow: 0 1px 2px rgba(0,0,0,0.08);}
+.theme-title h3 { margin:0; color:var(--accent, #8b5e3c); font-size:1.05rem; }
+.theme-title .muted { margin:2px 0 0; font-size:0.85rem; color:var(--marginalia,#7a6f58); }
+.theme-icon { margin-left:auto; font-family:monospace; font-size:1.05rem; transition: transform 400ms ease; }
+
+/* expanded area */
+.theme-expand {
+    max-height: 0; overflow: hidden; transition: max-height 420ms cubic-bezier(.2,.9,.2,1), padding 320ms ease;
+    padding-top: 0;
+}
+.theme-card.open .theme-expand { padding-top: 12px; max-height: 420px; }
+
+/* accent bar */
+.theme-accent { height:6px; border-radius: 6px; margin-bottom:10px; opacity:0.95; }
+
+/* description & metadata */
+.theme-desc { margin:0 0 8px 0; color:var(--text-color,#2b2b2b); font-size:0.95rem; }
+.theme-meta { display:flex; gap:12px; align-items:center; }
+.sparkline { width:60px; height:20px; flex: 0 0 60px; background:transparent; }
+.featured { flex:1; font-size:0.9rem; color:var(--marginalia,#7a6f58); }
+.featured-text { margin:4px 0 0; font-style:italic; color:var(--text-color,#2b2b2b); }
+
+/* action */
+.theme-actions { margin-top:10px; }
+.view-prompts { background:transparent; border:1px solid rgba(0,0,0,0.08); padding:8px 10px; border-radius:8px; cursor:pointer; font-weight:600; color:var(--accent,#8b5e3c); }
+
+/* icon rotate when open */
+.theme-card.open .theme-icon { transform: rotate(180deg) translateY(-2px); }
+
+/* accessible focus */
+.theme-card:focus { outline: 3px solid rgba(139,94,60,0.12); outline-offset: 4px; }
+
+/* Small adjustments for very small screens */
+@media (max-width:520px){
+    .theme-top { gap:8px; }
+    .theme-title h3 { font-size:1rem; }
+    .sparkline { display:none; }
+}
+
+
+.final-synthesis {
+    background-color: #fdf6e3;
+    color: #333;
+    padding: 3rem 1rem;
+    font-family: 'Georgia', serif;
+    line-height: 1.7;
+}
+
+.final-synthesis h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.final-synthesis .ascii-frame-top,
+.final-synthesis .ascii-frame-bottom {
+    font-family: monospace;
+    text-align: center;
+    color: #8e7f5f;
+    margin: 1rem 0;
+}
+
+.final-synthesis p {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.final-synthesis p.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.final-synthesis .synthesis-intro {
+    font-weight: 600;
+}
+
+.final-synthesis .synthesis-conclusion {
+    font-style: italic;
+    font-weight: 600;
+    margin-top: 2rem;
+}
+
+.analysis {
+    background-color: #f8f8f8;
+    border-left: 4px solid #8c8c8c;
+    padding: 1em;
+    margin-top: 1em;
+    border-radius: 6px;
+}
+.analysis h4 {
+    color: #333;
+}
