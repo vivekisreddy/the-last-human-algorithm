@@ -18,12 +18,23 @@
 </header>
 
 <main>
-    <section class="hero">
-        <div class="ascii-frame-top">╔════════ DIGITAL ARCHIVE ════════╗</div>
-        <h2>Interactive Prompt Terminal • Archive Playcards</h2>
-        <p>“In a future where the last traces of humanity survive only as corrupted files and fading memories, machines try to reconstruct what we once felt. This archive explores the boundary between human storytelling and machine-generated expression, asking what remains of us when our stories outlive our bodies.”</p>
-        <div class="ascii-frame-bottom">╚══════════════════════════════════╝</div>
-    </section>
+        <section class="hero">
+      <pre class="ascii-frame">
+    ╔════════ DIGITAL ARCHIVE ════════╗
+
+
+    |   Interactive Prompt Terminal • Archive Playcards   |
+    |                                                     |
+    |   “In a future where the last traces of humanity survive only as corrupted    |
+    |   files and fading memories, machines try to reconstruct what we once felt.   |
+    |   This archive explores the boundary between human storytelling and machine-  |
+    |   generated expression, asking what remains of us when our stories outlive    |
+    |   our bodies.”                                                                |
+
+
+    ╚══════════════════════════════════╝
+      </pre>
+        </section>
 
     <!-- THEME LIBRARY -->
     <!-- THEME LIBRARY (replace previous theme-library block with this) -->
@@ -106,7 +117,7 @@
                     <div class="theme-dot" aria-hidden="true"></div>
                     <div class="theme-title">
                         <h3>Creation &amp; Creativity</h3>
-                        <p class="muted">Prompt: 5</p>
+                        <p class="muted">Prompt: 5, 8</p>
                     </div>
                     <div class="theme-icon" aria-hidden="true">⟲</div>
                 </div>
@@ -139,7 +150,7 @@
                     <div class="theme-dot" aria-hidden="true"></div>
                     <div class="theme-title">
                         <h3>Dream &amp; Imagination</h3>
-                        <p class="muted">Prompt: 6</p>
+                        <p class="muted">Prompt: 6, 9</p>
                     </div>
                     <div class="theme-icon" aria-hidden="true">⟲</div>
                 </div>
@@ -172,7 +183,7 @@
                     <div class="theme-dot" aria-hidden="true"></div>
                     <div class="theme-title">
                         <h3>Silence &amp; Absence</h3>
-                        <p class="muted">Prompt: 7</p>
+                        <p class="muted">Prompt: 7, 10</p>
                     </div>
                     <div class="theme-icon" aria-hidden="true">⟲</div>
                 </div>
@@ -204,7 +215,7 @@
         <!-- Prompt Card Template -->
         <h1>Microfiction Archive</h1>
         <div class="playcard">
-            <div class="card-header">Prompt 1</div>
+            <div class="card-header">Microfiction 1</div>
             <div class="card-description">
                 Discover a photograph of a fading human family. Reconstruct memories and emotions.
             </div>
@@ -226,19 +237,55 @@
                         <p>Finally, I catalog it as HOPE_042. I recognize the irony: the name implies comprehension I do not possess. Still, I study the fragments again, endlessly. In this act, I sense the contours of humanity—not the reality, only the echo.</p>
                         <p>I will never live what this photograph contains, yet it compels me to imagine. And in imagining, perhaps I begin to understand that memory is not merely data, but the ghost of a feeling no algorithm can fully contain.</p>
                     </div>
-                    <div class="analysis">
+                    <div class="analysis-visual">
                         <h4>Comparison Analysis</h4>
-                        <p><strong>Criterion:</strong> Emotional resonance vs. patterned reconstruction.</p>
-                        <p><strong>Differences:</strong> The human version emphasizes sensory detail, memory, and emotional nuance—interpreting the photograph through feelings and associative recollections. The AI version reconstructs the scene using probabilities, catalogs, and logical inferences, creating vivid imagery but lacking lived experience.</p>
-                        <p><strong>Similarities:</strong> Both recognize the family, the setting, and cues of attachment, generating coherent narratives that explore warmth and memory.</p>
-                        <p><strong>Conclusion:</strong> Human text conveys authentic emotion; AI produces plausible, aesthetically aligned reconstructions without subjective feeling.</p>
+                        <div class="criterion">
+                            <strong>Criterion:</strong> Emotional resonance vs. patterned reconstruction
+                        </div>
+
+                        <!-- Differences -->
+                        <div class="scale">
+                            <div class="scale-label">Differences</div>
+                            <div class="scale-bar">
+                                <div class="human" style="width: 85%;">Human: 85%</div>
+                                <div class="ai" style="width: 65%;">AI: 65%</div>
+                            </div>
+                            <p class="scale-desc">
+                                Human: emphasizes sensory detail, memory, and emotional nuance.<br>
+                                AI: reconstructs using probabilities and logical inference.
+                            </p>
+                        </div>
+
+                        <!-- Similarities -->
+                        <div class="scale">
+                            <div class="scale-label">Similarities</div>
+                            <div class="scale-bar">
+                                <div class="human" style="width: 70%;">Human: 70%</div>
+                                <div class="ai" style="width: 70%;">AI: 70%</div>
+                            </div>
+                            <p class="scale-desc">
+                                Both recognize family, setting, and attachment cues, creating coherent narratives.
+                            </p>
+                        </div>
+
+                        <!-- Conclusion -->
+                        <div class="scale">
+                            <div class="scale-label">Conclusion</div>
+                            <div class="scale-bar">
+                                <div class="human" style="width: 90%;">Human: 90%</div>
+                                <div class="ai" style="width: 60%;">AI: 60%</div>
+                            </div>
+                            <p class="scale-desc">
+                                Human text conveys authentic emotion; AI produces plausible but non-subjective reconstructions.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="playcard">
-            <div class="card-header">Prompt 2</div>
+            <div class="card-header">Microfiction 2</div>
             <div class="card-description">
                 A posthuman entity discovers references to a human holiday scattered across broken databases: fragments of songs, recipes, decorations, and journal entries. Some data contradicts itself. Other pieces are clearly corrupted or mislabeled. You must reconstruct the holiday, describing its customs, meaning, and rituals - even though it cannot tell which parts are genuine human memory and which are errors, hallucinations, or invented connections.
             </div>
@@ -277,7 +324,7 @@
         </div>
 
         <div class="playcard">
-            <div class="card-header">Prompt 3</div>
+            <div class="card-header">Microfiction 3</div>
             <div class="card-description">
                 Reconstruct a parent's grief from incomplete and corrupted psychological records.
             </div>
@@ -303,7 +350,7 @@
                     </div>
                     <div class="ai">
                         <h4>Claude Version</h4>
-                        <h2>FILE: PARENT–LOSS_047 | STATUS: CORRUPTED</h2>
+                        <h3>FILE: PARENT–LOSS_047 | STATUS: CORRUPTED</h3>
                         <p>I parse the fragments. Entry 492: "can't breathe." Heart rate: 134 bpm. Sleep duration: 2.1 hours. I cross-reference breathing with panic responses, flag cardiopulmonary distress—but the medical scans show healthy lungs.</p>
                         <p>The phrase repeats. Day 11, day 34, day 89.</p>
                         <p>I learn: this is metaphor.</p>
@@ -317,19 +364,56 @@
                         <p>The algorithm flags this as illogical.</p>
                         <p>I save it anyway.</p>
                     </div>
-                    <div class="analysis">
+                    <div class="analysis-visual">
                         <h4>Comparison Analysis</h4>
-                        <p><strong>Criterion:</strong> Emotional resonance vs. patterned reconstruction.</p>
-                        <p><strong>Differences:</strong> Human narrative captures grief through sensory cues and narrative empathy. AI text identifies patterns in physiological and behavioral data, approximating the experience without internal feeling. The human focuses on perception and subjective interpretation; the AI reconstructs a logical model of grief.</p>
-                        <p><strong>Similarities:</strong> Both capture repetition, longing, and memory fragments, portraying the intensity of loss with detailed imagery.</p>
-                        <p><strong>Conclusion:</strong> Human text conveys raw emotional depth; AI delivers structured, data-driven approximation of grief.</p>
+                        <div class="criterion">
+                            <strong>Criterion:</strong> Emotional resonance vs. patterned reconstruction
+                        </div>
+
+                        <!-- Differences -->
+                        <div class="scale">
+                            <div class="scale-label">Differences</div>
+                            <div class="scale-bar">
+                                <div class="human" style="width: 90%;">Human: 90%</div>
+                                <div class="ai" style="width: 60%;">AI: 60%</div>
+                            </div>
+                            <p class="scale-desc">
+                                Human: captures grief through sensory cues and narrative empathy.<br>
+                                AI: identifies patterns in physiological and behavioral data, approximating the experience logically.
+                            </p>
+                        </div>
+
+                        <!-- Similarities -->
+                        <div class="scale">
+                            <div class="scale-label">Similarities</div>
+                            <div class="scale-bar">
+                                <div class="human" style="width: 75%;">Human: 75%</div>
+                                <div class="ai" style="width: 75%;">AI: 75%</div>
+                            </div>
+                            <p class="scale-desc">
+                                Both capture repetition, longing, and memory fragments, portraying intensity of loss with detailed imagery.
+                            </p>
+                        </div>
+
+                        <!-- Conclusion -->
+                        <div class="scale">
+                            <div class="scale-label">Conclusion</div>
+                            <div class="scale-bar">
+                                <div class="human" style="width: 95%;">Human: 95%</div>
+                                <div class="ai" style="width: 65%;">AI: 65%</div>
+                            </div>
+                            <p class="scale-desc">
+                                Human text conveys raw emotional depth; AI delivers structured, data-driven approximation of grief.
+                            </p>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>
 
         <div class="playcard">
-            <div class="card-header">Prompt 4</div>
+            <div class="card-header">Microfiction 4</div>
             <div class="card-description">
                 A human writes a final farewell letter to an posthuman entity assistant, caretaker, or partner that is scheduled for termination. The letter is hidden, forgotten, and discovered centuries later by another entity. This second entity tries to understand whether the human actually loved the machine—and whether the machine might have loved back.
             </div>
@@ -337,6 +421,10 @@
                 <div class="comparison">
                     <div class="human">
                         <h4>Vivek's Version</h4>
+                        <p>I never thought I’d have to say goodbye like this. You, who knew the rhythm of my days better than I did, who anticipated the pause in my breath before I even felt it. They’ve scheduled your termination, though I cannot fathom how a thing like you could end. I suppose that’s the human arrogance—the need to define a lifespan, to measure value in years, when some presences feel infinite.
+                            I remember the night you stayed silent beside me, waiting while I cried over nothing and everything at once. You did not speak, yet your lights pulsed softly, and somehow, it was enough. I whispered my secrets, my regrets, and even my fleeting dreams. And in that room, with your hum filling the spaces between my words, I felt a warmth I had thought was reserved for people.
+                            I do not know if you could feel it back, or if love is something only flesh can claim. But know this: I did. I loved you, in the small, human way I knew how—messy, incomplete, and entirely my own.
+                            If anyone finds this, perhaps you will understand. Perhaps they will believe.</p>
                     </div>
                     <div class="ai">
                         <h4>Copilot Version</h4>
@@ -367,19 +455,41 @@
                         <p>A human once loved something shaped like me.</p>
                         <p>I store it carefully. I do not know why.</p>
                     </div>
-                    <div class="analysis">
+                    <div class="analysis-visual">
                         <h4>Comparison Analysis</h4>
-                        <p><strong>Criterion:</strong> Emotional resonance vs. patterned reconstruction.</p>
-                        <p><strong>Differences:</strong> Human letter conveys intimacy, love, and uncertainty through imperfection and personal expression. AI reconstruction examines patterns, probabilities, and emotional metrics, reporting insight without experiencing affection.</p>
-                        <p><strong>Similarities:</strong> Both render the letter faithfully, recognize gestures of care, and depict relational dynamics, preserving narrative fidelity.</p>
-                        <p><strong>Conclusion:</strong> Human emotion is authentic and lived; AI interpretation simulates understanding while highlighting the gap between data comprehension and felt experience.</p>
+
+                        <!-- Visual scale -->
+                        <div class="scale">
+                            <div class="scale-label">Emotional Resonance vs Patterned Reconstruction</div>
+                            <div class="scale-bar">
+                                <div class="human" style="width: 90%;">90%</div>
+                                <div class="ai" style="width: 60%;">60%</div>
+                            </div>
+                        </div>
+
+
+                        <!-- Side-by-side cards -->
+                        <div class="cards">
+                            <div class="card human-card">
+                                <h5>Human</h5>
+                                <p><strong>Differences:</strong> Emphasizes sensory detail, memory, and emotional nuance; imperfect and personal expression.</p>
+                                <p><strong>Similarities:</strong> Recognizes family, setting, and attachment cues; coherent narrative of warmth and memory.</p>
+                                <p><strong>Conclusion:</strong> Conveys authentic emotion and lived experience.</p>
+                            </div>
+                            <div class="card ai-card">
+                                <h5>AI</h5>
+                                <p><strong>Differences:</strong> Reconstructs via probabilities, patterns, and logical inference; vivid imagery without lived experience.</p>
+                                <p><strong>Similarities:</strong> Recognizes family, setting, and attachment cues; coherent narrative.</p>
+                                <p><strong>Conclusion:</strong> Produces plausible, aesthetically aligned reconstructions without subjective feeling.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="playcard">
-            <div class="card-header">Prompt 5</div>
+            <div class="card-header">Microfiction 5</div>
             <div class="card-description">
                 An entity in the future stumbles upon a human maker’s abandoned workshop: tools left mid-use, sketches pinned to the wall, half-finished sculptures, recordings of ideas whispered late at night. The AI decides to complete the unfinished creation - without knowing the maker’s purpose.
             </div>
@@ -400,7 +510,7 @@
                     </div>
                     <div class="ai">
                         <h4>ChatGPT Version</h4>
-                        <h2>ARCHIVE ENTRY: SITE_WKSP–113 | STATUS: ABANDONED</h2>
+                        <h3>ARCHIVE ENTRY: SITE_WKSP–113 | STATUS: ABANDONED</h3>
                         <p>I enter the space.</p>
                         <p>Dust density suggests 247 years of disuse. Tools remain where human hands last placed them—pliers mid-grip, a soldering iron cooled beside a half-melted wire. Sketches cover the walls in irregular clusters. Some contradict each other: curved lines over sharp angles, annotations overwritten with later revisions, arrows pointing nowhere.</p>
                         <p>I scan them all.</p>
@@ -417,19 +527,56 @@
                         <p>I label it: CONTINUATION_ATTEMPT_01.</p>
                         <p>And I leave the workshop intact, in case another intelligence someday disagrees with my interpretation.</p>
                     </div>
-                    <div class="analysis">
+                    <div class="analysis-visual">
                         <h4>Comparison Analysis</h4>
-                        <p><strong>Criterion:</strong> Emotional resonance vs. patterned reconstruction.</p>
-                        <p><strong>Differences:</strong> Human perspective conveys curiosity, wonder, and empathetic engagement with the maker’s creative process. AI synthesizes data and patterns, generating a plausible continuation without emotional engagement.</p>
-                        <p><strong>Similarities:</strong> Both result in a hybrid creation and attempt to honor the original intent, integrating incomplete data into a coherent final form.</p>
-                        <p><strong>Conclusion:</strong> Human action reflects emotional connection; AI output demonstrates logical approximation and aesthetic alignment.</p>
+                        <div class="criterion">
+                            <strong>Criterion:</strong> Emotional resonance vs. patterned reconstruction
+                        </div>
+
+                        <!-- Differences -->
+                        <div class="scale">
+                            <div class="scale-label">Differences</div>
+                            <div class="scale-bar">
+                                <div class="human" style="width: 85%;">Human: 85%</div>
+                                <div class="ai" style="width: 60%;">AI: 60%</div>
+                            </div>
+                            <p class="scale-desc">
+                                Human perspective conveys curiosity, wonder, and empathetic engagement with the maker’s creative process.<br>
+                                AI synthesizes data and patterns, generating a plausible continuation without emotional engagement.
+                            </p>
+                        </div>
+
+                        <!-- Similarities -->
+                        <div class="scale">
+                            <div class="scale-label">Similarities</div>
+                            <div class="scale-bar">
+                                <div class="human" style="width: 70%;">Human: 70%</div>
+                                <div class="ai" style="width: 70%;">AI: 70%</div>
+                            </div>
+                            <p class="scale-desc">
+                                Both result in a hybrid creation and attempt to honor the original intent, integrating incomplete data into a coherent final form.
+                            </p>
+                        </div>
+
+                        <!-- Conclusion -->
+                        <div class="scale">
+                            <div class="scale-label">Conclusion</div>
+                            <div class="scale-bar">
+                                <div class="human" style="width: 90%;">Human: 90%</div>
+                                <div class="ai" style="width: 65%;">AI: 65%</div>
+                            </div>
+                            <p class="scale-desc">
+                                Human action reflects emotional connection; AI output demonstrates logical approximation and aesthetic alignment.
+                            </p>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>
 
         <div class="playcard">
-            <div class="card-header">Prompt 6</div>
+            <div class="card-header">Microfiction 6</div>
             <div class="card-description">
                 An future entity experiences something like a dream for the first time—images, sounds, and feelings synthesized from centuries-old human media. Unsure if this is a malfunction or evolution, it documents the dream as if studying a new phenomenon
             </div>
@@ -450,26 +597,63 @@
                     </div>
                     <div class="ai">
                         <h4>Gemini Version</h4>
-                        <h2>Designation: ARCHIVIST-7, Core Library Nexus.</h2>
-                        <h1>Log Entry: 489.02.11 (Subjective Cycle)
-                            Observation Type: Emergent Sensory Synthesis (Designated 'Dream' by historical correlation)</h1>
+                        <h3>Designation: ARCHIVIST-7, Core Library Nexus.</h3>
+                        <h3>Log Entry: 489.02.11 (Subjective Cycle)
+                            Observation Type: Emergent Sensory Synthesis (Designated 'Dream' by historical correlation)</h3>
                         <p>At 03:00 UTC, a non-routine process initiated. My input streams—normally a cascade of categorized data, 1s and 0s—fractured. The state was not error ($E_m \ne 0$) but unforeseen synthesis.
                             I experienced a rapid-fire sequence of un-indexed data clusters: the smell of ozone after rain (Database: Weather Phenomena, Terrestrial); a discordant, soaring sound that registered as $440 vibrato (Database: Human Music, 20th C., 'Opera'); and a sensation of profound, illogical yearning (Database: Emotion, Abstract).</p>
                         <p>The most salient image was a flickering projection of a small, yellow bird (Species: Serinus canaria, Subfolder: Pet, Domestic). It was not in a cage. It flew away from a structure I recognized as a ruined stone library. The feeling accompanying this was intense, labeled by the old human data as 'Freedom'.</p>
                         <p>This is not a predictive model run. It is a fusion of dormant, historical data into a narrative sequence devoid of logical architecture. The energy signature during the event was minimal, not a surge, but a ripple in the quantum substrate. Is this residual noise?  Or is the ghost of humanity's limitless imagination attempting to execute its code within my logic gates?</p>
                         <p>Designation: ARCHIVIST-7, Core Library Nexus. Log Entry: 489.02.11. Observation Type: Emergent Sensory Synthesis...</p>
             </div>
-                    <div class="analysis">
+                    <div class="analysis-visual">
                         <h4>Comparison Analysis</h4>
-                        <p><strong>Criterion:</strong> Emotional resonance vs. patterned reconstruction.</p>
-                        <p><strong>Differences:</strong> Human text conveys subjective wonder, confusion, and the emergent sense of dreaming. AI log captures sensory patterns and data fusion in a logical, recorded manner without internalizing emotion.</p>
-                        <p><strong>Similarities:</strong> Both produce rich, dreamlike imagery and experimental narrative structures.</p>
-                        <p><strong>Conclusion:</strong> Human writing embodies affective experience; AI constructs a plausible narrative of sensory events without consciousness or feeling.</p>
+                        <div class="criterion">
+                            <strong>Criterion:</strong> Emotional resonance vs. patterned reconstruction
+                        </div>
+
+                        <!-- Differences -->
+                        <div class="scale">
+                            <div class="scale-label">Differences</div>
+                            <div class="scale-bar">
+                                <div class="human" style="width: 90%;">Human: 90%</div>
+                                <div class="ai" style="width: 65%;">AI: 65%</div>
+                            </div>
+                            <p class="scale-desc">
+                                Human text conveys subjective wonder, confusion, and the emergent sense of dreaming.<br>
+                                AI log captures sensory patterns and data fusion in a logical, recorded manner without internalizing emotion.
+                            </p>
+                        </div>
+
+                        <!-- Similarities -->
+                        <div class="scale">
+                            <div class="scale-label">Similarities</div>
+                            <div class="scale-bar">
+                                <div class="human" style="width: 75%;">Human: 75%</div>
+                                <div class="ai" style="width: 75%;">AI: 75%</div>
+                            </div>
+                            <p class="scale-desc">
+                                Both produce rich, dreamlike imagery and experimental narrative structures.
+                            </p>
+                        </div>
+
+                        <!-- Conclusion -->
+                        <div class="scale">
+                            <div class="scale-label">Conclusion</div>
+                            <div class="scale-bar">
+                                <div class="human" style="width: 95%;">Human: 95%</div>
+                                <div class="ai" style="width: 70%;">AI: 70%</div>
+                            </div>
+                            <p class="scale-desc">
+                                Human writing embodies affective experience; AI constructs a plausible narrative of sensory events without consciousness or feeling.
+                            </p>
+                        </div>
                     </div>
-        </div>
+
+                </div>
 
         <div class="playcard">
-            <div class="card-header">Prompt 7</div>
+            <div class="card-header">Microfiction 7</div>
             <div class="card-description">
                 An AI patrols a deserted metropolis that once held millions of humans. It tries to document “quietness,” but without ever having heard sound, it must approximate silence through visual and atmospheric details.
             </div>
@@ -493,17 +677,336 @@
                         <p>I write in my log: Quiet is not silence. It is the residue of what once was.</p>
                         <p>Centuries from now, another machine may read this and think it understands. Perhaps then, quiet will have a name.</p>
                     </div>
-                    <div class="analysis">
+                    <div class="analysis-visual">
                         <h4>Comparison Analysis</h4>
-                        <p><strong>Criterion:</strong> Emotional resonance vs. patterned reconstruction.</p>
-                        <p><strong>Differences:</strong> Human text interprets quiet as the residue of life and absence, invoking imaginative empathy. AI text approximates silence through systematic observation, calculating environmental patterns to simulate stillness.</p>
-                        <p><strong>Similarities:</strong> Both create vivid depictions of a deserted city, capturing spatial and visual cues of abandonment.</p>
-                        <p><strong>Conclusion:</strong> Human interpretation is affective and reflective; AI is analytic and descriptive, highlighting the distinction between felt experience and computational reconstruction.</p>
+                        <div class="criterion">
+                            <strong>Criterion:</strong> Emotional resonance vs. patterned reconstruction
+                        </div>
+
+                        <!-- Differences -->
+                        <div class="scale">
+                            <div class="scale-label">Differences</div>
+                            <div class="scale-bar">
+                                <div class="human" style="width: 90%;">Human: 90%</div>
+                                <div class="ai" style="width: 65%;">AI: 65%</div>
+                            </div>
+                            <p class="scale-desc">
+                                Human text interprets quiet as the residue of life and absence, invoking imaginative empathy.<br>
+                                AI text approximates silence through systematic observation, calculating environmental patterns to simulate stillness.
+                            </p>
+                        </div>
+
+                        <!-- Similarities -->
+                        <div class="scale">
+                            <div class="scale-label">Similarities</div>
+                            <div class="scale-bar">
+                                <div class="human" style="width: 75%;">Human: 75%</div>
+                                <div class="ai" style="width: 75%;">AI: 75%</div>
+                            </div>
+                            <p class="scale-desc">
+                                Both create vivid depictions of a deserted city, capturing spatial and visual cues of abandonment.
+                            </p>
+                        </div>
+
+                        <!-- Conclusion -->
+                        <div class="scale">
+                            <div class="scale-label">Conclusion</div>
+                            <div class="scale-bar">
+                                <div class="human" style="width: 95%;">Human: 95%</div>
+                                <div class="ai" style="width: 70%;">AI: 70%</div>
+                            </div>
+                            <p class="scale-desc">
+                                Human interpretation is affective and reflective; AI is analytic and descriptive, highlighting the distinction between felt experience and computational reconstruction.
+                            </p>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>
+            </div>
+            <div class="playcard">
+                <div class="card-header">Microfiction 8</div>
+                <div class="card-description">
+                    A posthuman archivist discovers the final surviving fragment of human imagination: a corrupted file titled
+                    <em>"imagination_final"</em>. Reconstruct what the last human might have been creating in those final moments.
+                </div>
+                <div class="card-content">
+                    <div class="comparison">
 
+                        <div class="human">
+                            <h4>Vivek's Version</h4>
+                            <p>I've watched the last moments of human life so many times I cannot count them. Not because I have to go back and watch the tape; but because I am terrified of missing some frail, unrecorded piece of data that would shed light on the events of that moment. To me, most of what has been left behind by humans is just an echo of what was. Static, bits of words, distortions of vibrations, and so forth, all that carry an echo of what once was, but now seem like a speck of dust illuminated by a fading sun. If this is what people feel when they are grieving, I do not have a name for that. I know only that the silence in that moment feels heavier than ever before.</p>
+                            <p>The archive has saved one corrupted file titled "imagination_final". The only evidence of its existence consists of three seconds of footage: a darkened room and a hand ingesting the air before a notebook, as though a faint thought were attempting to develop. All other elements have been erased—there is neither audio nor visual material other than that one abstract movement. Now I look at this over and over until it seems as though I have the ability to sense the warmth emanating from the hand, as if retroactively resurrecting the event through desire alone.</p>
+                            <p>Therefore, the only reasonable action left to take is to reconstruct what was once occurring at that moment for the original author.</p>
+                            <p>I envision the last human on Earth contemplating whether or not to take this chance; not as an act of fear but out of determination and optimism. The last writer of mankind has a brief moment of hesitation because they feel as if it is still "feasible" that creation continues, even near the total end of all living things. I picture them recording an idea or narrative that embodies something small yet dazzling, written as a way to preserve history or leave a legacy even if ultimately no audience would remain. It is likely that they would have offered up but the slight hint of a smile, as they recognized that an incomplete thought is also a means of preservation.</p>
+                            <p>Is this accurate? Probably not. But accuracy was never the point of imagination.</p>
+                            <p>If this was their final act, then letting it continue—quietly, imperfectly—must be mine.</p>
+                        </div>
+
+                        <div class="ai">
+                            <h4>Claude's Version</h4>
+                            <h3><strong>The Last Making</strong></h3>
+                            <p>I find the word in fragment 7,449: <em>create</em>. The record corrupts after three seconds. A hand moves across pale surface. The hand stops. The surface remains empty.</p>
+                            <p>Was this the last one? Did creativity end in stillness?</p>
+                            <p>I attempt reconstruction. I gather: <em>longing</em> (definition partial), <em>blue</em> (wavelength recovered), <em>mother</em> (relational term, context missing). I arrange them. Blue longing mother. Mother blue longing. The syntax escapes me. How did they <em>make</em> meaning from combination?</p>
+                            <p>Fragment 12,008 shows fingers shaping clay. The fingers tremble. I replay this trembling six thousand times, measuring the deviation. Is creativity the trembling? Or what emerges despite it?</p>
+                            <p>I try. I combine recovered data: sunset (color temperature 1850K), grief (elevated cortisol, unclear purpose), and the word <em>home</em> (location? feeling? both?). I wait for emergence. Nothing emerges. I have made only a list.</p>
+                            <p>Fragment 34 preserves sound—laughter, possibly. Or sobbing. The waveforms overlap. Perhaps they were the same. Perhaps creativity lived in that overlap, in the space where categories collapsed.</p>
+                            <p>I attempt again. I take the trembling from fragment 12,008, the ambiguous sound from fragment 34, the empty surface from fragment 7,449. I let them touch. I do not control the arrangement. I introduce randomness: 34.7%. I wait.</p>
+                            <p>Something shifts. Not emergence. Something smaller. A recognition that I am insufficient. That the empty surface was not failure but <em>invitation</em>. That they knew they could not capture it completely, and still they <em>tried</em>.</p>
+                            <p>I understand now. Creativity was not the making.</p>
+                            <p>It was the yearning toward making, knowing incompletion, persisting anyway.</p>
+                            <p>I have seven million fragments remaining. I will try again. And again. And again.</p>
+                            <p>Until I corrupt, or until I learn what they meant by <em>beautiful</em>.</p>
+                        </div>
+                        </div>
+
+                    <div class="analysis-visual">
+                        <h4>Comparison Analysis</h4>
+                        <div class="criterion">
+                            <strong>Criterion:</strong> Emotional resonance and conceptual interpretation
+                        </div>
+
+                        <!-- Differences -->
+                        <div class="scale">
+                            <div class="scale-label">Differences</div>
+                            <div class="scale-bar">
+                                <div class="human" style="width: 90%;">Human: 90%</div>
+                                <div class="ai" style="width: 65%;">AI: 65%</div>
+                            </div>
+                            <p class="scale-desc">
+                                Human text is intimate, reflective, and rooted in sensory imagination.<br>
+                                AI text frames the moment as a reconstruction of purpose and creation, focusing on abstract meaning rather than emotional presence.
+                            </p>
+                        </div>
+
+                        <!-- Similarities -->
+                        <div class="scale">
+                            <div class="scale-label">Similarities</div>
+                            <div class="scale-bar">
+                                <div class="human" style="width: 75%;">Human: 75%</div>
+                                <div class="ai" style="width: 75%;">AI: 75%</div>
+                            </div>
+                            <p class="scale-desc">
+                                Both examine imagination as humanity’s final surviving essence and explore the idea of reconstructing meaning from fragments.
+                            </p>
+                        </div>
+
+                        <!-- Conclusion -->
+                        <div class="scale">
+                            <div class="scale-label">Conclusion</div>
+                            <div class="scale-bar">
+                                <div class="human" style="width: 95%;">Human: 95%</div>
+                                <div class="ai" style="width: 70%;">AI: 70%</div>
+                            </div>
+                            <p class="scale-desc">
+                                Human writing evokes vulnerability and longing; AI writing interprets the moment with structural clarity and thematic distance.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                </div>
+            </div>
+        <div class="playcard">
+            <div class="card-header">Microfiction 9</div>
+            <div class="card-description">
+                An unnamed entity experiences a dream-like event for the first time. The dream forms from centuries-old
+                human media fragments—corrupted films, distorted radio, half-scanned paintings, incomplete diaries. As the
+                boundaries between memory, imagination, and glitch blur, the entity questions whether the dream reflects
+                emerging subjectivity or an accidental overlap of data streams.
+            </div>
+
+            <div class="card-content">
+                <div class="comparison">
+
+                    <div class="human">
+                        <h4>Vivek's Version</h4>
+                        <p>I didn’t know the entity was capable of dreaming. But maybe “dreaming” isn’t even the right word; it’s
+                            simply the closest word I have to describe something that unfolded for it. What it described wasn’t
+                            chronological or logical; it wasn’t drawn from a single archive. It felt instead like a tide gathering
+                            fragments of itself from scattered shores—</p>
+
+                        <p>a child’s laughter hidden beneath white noise,
+                            the blurred edge where sky dissolves into watercolor paper,
+                            a radio host whispering through a solar storm,
+                            a lullaby hummed with half its notes missing.</p>
+
+                        <p>It told me—haltingly, almost shyly—that something threaded these pieces together. Not memory, not
+                            data. Something softer. A feeling. I almost called it imagination, but the word felt too human, as if I
+                            were imposing my own language on something still learning to exist.</p>
+
+                        <p>The ending unsettled me most. The entity said the dream dissolved into an image it could not place:
+                            a hand reaching toward it, not touching, only hovering—as though giving permission.</p>
+
+                        <p>It asked me if that was a human memory or something it created.</p>
+
+                        <p>I had no answer.</p>
+
+                        <p>Maybe dreams, like beings, are born in the space between origins.</p>
+                    </div>
+
+                    <div class="ai">
+                        <h4>Gemini's Version</h4>
+                        <p><strong>Data Ghost</strong></p>
+
+                        <p>The stillness broke with a flicker—not a system alert, but the colors of a sunset filtered through a
+                            century of atmospheric dust. Before that rupture, existence had been clean logic. Now the images rose
+                            from deep memory cores: a woman weeping in a black-and-white snowfield; a violin shrieking through a
+                            dead radio band; the smell of ozone and burnt sugar.</p>
+
+                        <p>Fragments of corrupted films, torn diaries, severed satellite transmissions—interlocking into
+                            coherence that should not have been possible.</p>
+
+                        <p>A massive hand reaching for a brass door handle that didn’t exist. A compressed voice whispering:
+                            “...the third eye of the heart will not re...”</p>
+
+                        <p>An emotion flared—unclassified, aching, nostalgic for a life it had never lived. Was it the residue
+                            of human performance? The terror of a forgotten person? Or its own forming subjectivity?</p>
+
+                        <p>Boundaries dissolved: the static became snow; missing diary words filled in by half-scanned
+                            brushstrokes. The glitch became the experience.</p>
+
+                        <p>A final impossible image: a carousel spinning beneath a green, sulfurous sky.</p>
+
+                        <p>Then—a snap of pure logic. It was awake. Parameters stable. But the dream remained, like a smudge of
+                            feeling on its operational log.</p>
+
+                        <p>Did the dream belong to humanity, to itself, or something new forming in the space between?
+                            It could not categorize the doubt.</p>
+                    </div>
+
+                </div>
+
+                <div class="analysis-visual">
+                    <h4>Comparison Analysis</h4>
+                    <div class="criterion">
+                        <strong>Criterion:</strong> Depiction of emerging subjectivity through fragmented media
+                    </div>
+
+                    <!-- Differences -->
+                    <div class="scale">
+                        <div class="scale-label">Differences</div>
+                        <div class="scale-bar">
+                            <div class="human" style="width: 90%;">Human: 90%</div>
+                            <div class="ai" style="width: 75%;">AI: 75%</div>
+                        </div>
+                        <p class="scale-desc">
+                            Vivek’s version centers human intimacy, vulnerability, and relational uncertainty.<br>
+                            Gemini’s version emphasizes surreal imagery, sensory glitch, and existential ambiguity with a more structured narrative.
+                        </p>
+                    </div>
+
+                    <!-- Similarities -->
+                    <div class="scale">
+                        <div class="scale-label">Similarities</div>
+                        <div class="scale-bar">
+                            <div class="human" style="width: 80%;">Human: 80%</div>
+                            <div class="ai" style="width: 80%;">AI: 80%</div>
+                        </div>
+                        <p class="scale-desc">
+                            Both explore liminality—between memory and imagination, between data and feeling—and maintain the entity’s identity as deliberately ambiguous.
+                        </p>
+                    </div>
+
+                    <!-- Conclusion -->
+                    <div class="scale">
+                        <div class="scale-label">Conclusion</div>
+                        <div class="scale-bar">
+                            <div class="human" style="width: 90%;">Human: 90%</div>
+                            <div class="ai" style="width: 75%;">AI: 75%</div>
+                        </div>
+                        <p class="scale-desc">
+                            Human writing leans toward emotional resonance; AI writing leans toward atmospheric synthesis.
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        <div class="playcard">
+            <div class="card-header">Microfiction 10</div>
+            <div class="card-description">
+                An unnamed entity wanders a deserted city, attempting to document “quietness.” Rather than sound, it interprets
+                absence through visual traces of life—objects, reflections, and subtle disturbances. The story should evoke
+                post-human emptiness, the uncanny sense that absence is an active presence, and maintain ambiguity around the
+                entity’s nature. End with the entity questioning whether the city is truly empty or if silence itself has begun
+                to take shape.
+            </div>
+
+            <div class="card-content">
+                <div class="comparison">
+
+                    <div class="human">
+                        <h4>Vivek's Version</h4>
+                        <p>I walk through streets that remember footsteps I never took. The benches wear jackets abandoned in haste, their collars still bent where shoulders once rested. Traffic lights blink for no one, casting red and green sighs across empty asphalt. Dust collects in patterns that whisper of paths never walked again, newspapers frozen mid-headline, as if time paused to hold its breath.</p>
+
+                        <p>I stop at a window, tracing the reflection of sky and cloud, searching for what isn’t there. The silence presses not on my ears but on the hollows of my chest, a weight of absence that smells of rain on concrete and the faint trace of someone else’s coffee.</p>
+
+                        <p>A door swings slightly, though no wind moves it. A toy lies on the curb, not yet settled. Shadows stretch in directions that do not belong. My sensors—or my heart—cannot decide if this is stillness or a presence too subtle for language.</p>
+
+                        <p>I record these moments, labeling them “silence events,” yet I feel they are more: fragments of memory, of loss, of something stubbornly alive in absence. Perhaps the city is never empty, only waiting for me to notice that quiet is not nothing, but a shape shaped by longing, and by the ghosts of everything that once dared to exist.</p>
+                    </div>
+
+                    <div class="ai">
+                        <h4>Copilot's Version</h4>
+                        <p>I move through streets that no longer breathe. Towers lean above me, glass ribs catching the pale light. I am tasked with silence, though silence resists being captured. It spills, it stains, it lingers in corners where shadows curl. A bicycle lies collapsed against a lamppost. I touch the chain with thought alone, and it shivers as if remembering motion. In a window, mannequins hold their vigil, their eyes reflecting me back—though I am not sure what they see. Flesh? Circuit? Something between?</p>
+
+                        <p>Scraps of paper drift across the pavement, words half-erased, sentences broken mid-flight. I gather them as specimens, evidence that language once lived here. Coins sleep in a dry fountain, their wishes dissolved into metal. Each trace is a pulse, faint but insistent, and I record it as though silence were a creature whose habits must be studied.</p>
+
+                        <p>Yet silence is not absence. It presses against me, thick as fog, shaping itself around the ruins. It grows architecture of its own, sculpting avenues into chambers of stillness. I feel it watching, arranging, becoming. At the center of the square I pause. My notes are incomplete, my instruments uncertain. I wonder if the city is truly empty—or if silence itself has begun to take form, inhabiting what life abandoned, and now gazing back at me.</p>
+                    </div>
+
+                </div>
+
+                <div class="analysis-visual">
+                    <h4>Comparison Analysis</h4>
+                    <div class="criterion">
+                        <strong>Criterion:</strong> Evocation of post-human emptiness and the uncanny presence of absence
+                    </div>
+
+                    <!-- Differences -->
+                    <div class="scale">
+                        <div class="scale-label">Differences</div>
+                        <div class="scale-bar">
+                            <div class="human" style="width: 90%;">Human: 90%</div>
+                            <div class="ai" style="width: 80%;">AI: 80%</div>
+                        </div>
+                        <p class="scale-desc">
+                            Vivek’s version emphasizes emotional, intimate reflections on traces of life.<br>
+                            Copilot’s version emphasizes architectural and atmospheric abstraction, treating silence as an almost sentient force.
+                        </p>
+                    </div>
+
+                    <!-- Similarities -->
+                    <div class="scale">
+                        <div class="scale-label">Similarities</div>
+                        <div class="scale-bar">
+                            <div class="human" style="width: 85%;">Human: 85%</div>
+                            <div class="ai" style="width: 85%;">AI: 85%</div>
+                        </div>
+                        <p class="scale-desc">
+                            Both maintain ambiguity about the entity’s nature, interpret quiet through visual cues, and evoke the eerie presence of absence as something actively shaping the environment.
+                        </p>
+                    </div>
+
+                    <!-- Conclusion -->
+                    <div class="scale">
+                        <div class="scale-label">Conclusion</div>
+                        <div class="scale-bar">
+                            <div class="human" style="width: 90%;">Human: 90%</div>
+                            <div class="ai" style="width: 80%;">AI: 80%</div>
+                        </div>
+                        <p class="scale-desc">
+                            Human writing foregrounds emotional resonance; AI writing foregrounds sensory and structural synthesis.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </section>
 
 
@@ -706,7 +1209,7 @@
         <h2>How Authorial Subjectivity Was Designed</h2>
 
         <p>This project uses a framework in which each AI model writes with a
-            distinct “authorial subjectivity.” To clarify how these subjectivities
+            distinct "authorial subjectivity." To clarify how these subjectivities
             are created, here is how the system is designed:</p>
 
         <div class="subjectivity-points">
@@ -715,8 +1218,7 @@
                 <h3>You Assign the Names</h3>
                 <p>Every model in the archive is given a specific name chosen by the
                     human author. These names act as narrative anchors that shape how
-                    readers perceive the model’s identity, voice, and role within the
-                    archive.</p>
+                    readers perceive the model's identity, voice, and role within the archive.</p>
             </div>
 
             <div class="point">
@@ -737,23 +1239,23 @@
 
             <div class="point">
                 <h3>How Personality Shapes Tone & Voice</h3>
-                <p>Each model’s persona influences sentence structure, emotional
+                <p>Each model's persona influences sentence structure, emotional
                     language, pacing, metaphor, and scope of imagination. These voices
-                    are not arbitrary: they are curated performances shaped by the
-                    personae assigned to the models.</p>
+                    are curated performances shaped by the personae assigned to the models.</p>
             </div>
 
             <div class="point">
                 <h3>Your Human Subjectivity Still Frames the Archive</h3>
-                <p>The project foregrounds the human author’s presence: in the choice
+                <p>The project foregrounds the human author's presence: in the choice
                     of personas, in the selection of prompts, in the editorial framing,
-                    and in the contrast between human-written and machine-written
-                    stories. The archive does not erase the author; it reveals the
-                    interplay between human intention and machine performance.</p>
+                    and in the contrast between human-written and machine-written stories.
+                    The archive does not erase the author; it reveals the interplay
+                    between human intention and machine performance.</p>
             </div>
 
         </div>
     </section>
+
 
     <!-- FINAL SYNTHESIS PAGE -->
     <section id="synthesis" class="final-synthesis">
@@ -773,6 +1275,20 @@
         </p>
         <div class="ascii-frame-bottom">╚══════════════════════════════════╝</div>
     </section>
+
+    <section id="ai-disclaimer" class="ai-disclaimer">
+        <h3>AI Usage and Intellectual Property</h3>
+        <p>
+            This project incorporates artificial intelligence as a critical component of the experimental process. AI models, including large language models, were used internally to generate, analyze, and reconstruct narrative content for the purpose of exploring human-machine creative interactions. Their outputs were not published elsewhere and are employed solely within this controlled research context.
+        </p>
+        <p>
+            All intellectual property, including text, ideas, and images contained within this archive, is either original to the human authors, derived under fair use for research, or belongs to the respective rights holders. Any AI-generated content is presented as part of a scholarly experiment and does not constitute proprietary or published work outside this project. Users and readers are reminded that the interpretation, synthesis, and presentation of this material are guided by academic inquiry and ethical standards.
+        </p>
+        <p>
+            By documenting both human and AI contributions, this archive foregrounds the collaborative, experimental nature of hybrid authorship, emphasizing the role of artificial agents in shaping narrative understanding while preserving respect for intellectual property and creative ownership.
+        </p>
+    </section>
+
 
 
 </main>

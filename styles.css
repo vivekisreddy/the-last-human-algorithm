@@ -19,6 +19,13 @@ body {
     line-height: 1.6;
 }
 
+.ascii-frame {
+    font-family: monospace;
+    white-space: pre-wrap;
+    line-height: 1.2em;
+}
+
+
 .site-header {
     text-align: center;
     padding: 24px 12px;
@@ -157,6 +164,73 @@ body {
     border-radius: 6px;
 }
 
+.analysis-visual {
+    font-family: Arial, sans-serif;
+    margin: 2rem 0;
+}
+
+.scale {
+    margin-bottom: 1.5rem;
+}
+
+.scale-label {
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.scale-bar {
+    display: flex;
+    height: 30px;
+    background: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0.5rem 0;
+    position: relative;
+    font-weight: bold;
+}
+
+.scale-bar .human {
+    background: #a19663;
+    color: white;
+    text-align: center;
+    line-height: 5px;
+}
+
+.scale-bar .ai {
+    background: #59465c;
+    color: white;
+    text-align: center;
+    line-height: 5px;
+}
+
+
+.cards {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1 1 45%;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.human-card {
+    background-color: #ffe6e6;
+}
+
+.ai-card {
+    background-color: #e6f0ff;
+}
+
+.card h5 {
+    margin-top: 0;
+    color: #333;
+}
+
 /* Footer */
 .site-foot {
     text-align: center;
@@ -283,25 +357,25 @@ body {
     font-size: 1.1rem;
 }
 
-/* ----------------------------------------- */
-/*  Authorial Subjectivity Section (ARCHIVAL) */
-/* ----------------------------------------- */
-
+/* ----------------------------- */
+/* Authorial Subjectivity Section */
+/* ----------------------------- */
 .authorial-section {
     margin-top: 3rem;
     padding: 2rem 2.2rem;
-    background: var(--about-bg); /* soft parchment white */
-    border: 1px solid var(--card-border); /* light archival grey-brown */
+    background: var(--about-bg);
+    border: 1px solid var(--card-border);
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
+    transition: transform 0.3s ease;
 }
 
 .authorial-section h2 {
     font-size: 1.8rem;
-    color: var(--accent); /* warm sepia brown */
+    color: var(--accent);
     margin-bottom: 1.5rem;
     text-align: center;
     font-weight: bold;
@@ -315,9 +389,16 @@ body {
 
 .subjectivity-points .point {
     padding: 1.2rem 1.4rem;
-    background: var(--highlight-bg); /* light archival beige highlight */
+    background: var(--highlight-bg);
     border-left: 4px solid var(--accent);
     border-radius: 6px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Hover animation: lift & shadow */
+.subjectivity-points .point:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12);
 }
 
 .subjectivity-points h3 {
@@ -334,6 +415,17 @@ body {
     font-size: 0.95rem;
     line-height: 1.55;
 }
+
+/* Responsive adjustment */
+@media (max-width: 520px) {
+    .authorial-section {
+        padding: 1.5rem 1rem;
+    }
+    .subjectivity-points .point {
+        padding: 1rem 1rem;
+    }
+}
+
 
 /* THEME LIBRARY — interactive card styles (add to styles.css) */
 .theme-library { max-width: 1100px; margin: 2.5rem auto; padding: 0 1rem; }
@@ -453,3 +545,5 @@ body {
 .analysis h4 {
     color: #333;
 }
+
+
